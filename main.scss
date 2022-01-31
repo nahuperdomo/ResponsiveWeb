@@ -1,0 +1,373 @@
+/*BODY*/
+body{
+   background-image: url(./media/image/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+/*MAIN*/
+
+
+.main{
+    &__titulo{
+        font-size: 2rem;
+            display: block;
+            font-family: monospace;
+            white-space: nowrap;
+            border-right:4px solid;
+            width:14ch;
+            animation: typing 2s steps(14), blink .5s infinite step-end alternate;
+            overflow: hidden;
+            color: whitesmoke;
+    }
+    &__tituloProductos{
+        font-family: 'Bitter', serif;
+        font-size: x-large;
+        color: whitesmoke;
+        justify-content: center;
+        h1{
+            font-size: 2.5rem;
+            display: block;
+            font-family: monospace;
+            white-space: nowrap;
+            border-right:4px solid;
+            width:14ch;
+            animation: typing 2s steps(14), blink .5s infinite step-end alternate;
+            overflow: hidden;
+            color: whitesmoke;
+        }
+    }
+
+    &__formulario{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__tituloFormulario{
+        font-size: 2rem;
+        display: block;
+        font-family: monospace;
+        white-space: nowrap;
+        border-right:4px solid;
+        width:9ch;
+        animation: typing 2s steps(9), blink .5s infinite step-end alternate;
+        overflow: hidden;
+        color: whitesmoke; 
+    }
+    &__divForm{
+        background-color: #A9A9A9;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+
+
+    &__presentacion{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        &--modified{
+           /* @include flex-center();*/
+            width: 100%;
+            background-color: #0a0a0a;;
+            opacity: 0.5;
+            grid-area: info;
+            
+            margin-top: 2rem;
+            
+            
+            h1{
+                text-align: center;
+                font-size: 4rem;
+                display: block;
+                font-family: monospace;
+                white-space: nowrap;
+                border-right: 4px solid;
+                width: 10ch;
+                -webkit-animation: typing 2s steps(10), blink 0.5s infinite step-end alternate;
+                animation: typing 2s steps(10), blink 0.5s infinite step-end alternate;
+                overflow: hidden;
+                color: whitesmoke;
+            }
+            p{
+            color: white;
+            font-family: sans-serif;
+            font-size: 1.8rem;
+            text-align: center;
+            }
+        }
+    }
+    
+
+    &__botonesAyuda{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        a{
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__todosProductos{
+        
+        img{
+            width: 19rem;
+            height: 19rem;
+            margin-bottom: 1rem;
+            padding: 0px;
+        }
+    }
+
+    &__seccionProductos{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       
+    }
+    &__titulo_centrado{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__izquierda{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+    &__saludo{   
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        h1{
+            
+            font-size: 4rem;
+            display: block;
+            font-family: monospace;
+            white-space: nowrap;
+            border-right:4px solid;
+            width:9ch;
+            animation: typing 2s steps(9), blink .5s infinite step-end alternate;
+            overflow: hidden;
+            color: whitesmoke;
+            
+        }
+    }
+    &__imagenes{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        &--modified{
+            border-radius: 360px;
+            width: 15rem;
+            height: 15rem;
+            order: 2;
+            
+        }
+        img{
+            transition: opacity 3s;
+            border-radius: 360px;
+            width: 14rem;
+            height: 13rem;
+            order: 0;
+        }
+        img:hover{
+            transform: scale(1.2 ,1.2);
+            border-radius: 360px;
+            opacity: 0.8;
+        }
+    }
+    &__sobre_nosotros{
+        h1{
+            font-size: 2.5rem;
+            display: block;
+            font-family: monospace;
+            white-space: nowrap;
+            border-right:4px solid;
+            width:14ch;
+            animation: typing 2s steps(14), blink .5s infinite step-end alternate;
+            overflow: hidden;
+            color: rgb(3, 3, 3);
+        }
+    }
+    &__textoDescripcion{
+        font-family: sans-serif;
+        font-size:x-large;
+        margin-top: 1.2rem;
+        align-self: center;
+        color: whitesmoke;
+    }
+
+    &__seccionInfo{
+        display: flex;
+        width: 100%;
+        background-color:#0a0a0a;
+        opacity: 0.5;
+        grid-area: info;
+        padding: 2rem;
+    p{
+        color: whitesmoke;
+        text-align: center;
+        -webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both
+    }
+    a{
+        color: whitesmoke;
+    }
+    a:hover{
+        color: rgb(77, 65, 65)
+    }
+    }
+
+    &__seccionInfo2{
+        @extend .main__seccionInfo;
+        width: 100%;     
+    }
+
+    &__seccionInfo3{
+        @extend .main__seccionInfo;
+        justify-content: start;
+    }
+    &__seccionFormulario{
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+    button:hover{
+        background-color: green;
+    }
+    }
+    &__formulario{
+        input{
+            margin-bottom: 1rem;
+        }
+        select{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+
+@keyframes typing {
+    from {width: 0}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
+
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@keyframes slide-in-fwd-center{0%{transform:translateZ(-1400px);opacity:0}100%{transform:translateZ(0);opacity:1}}
+
+/*FOOTER*/
+
+@mixin borde {
+    border-radius: 2rem;
+}
+.navbar-nav{
+  display: flex;
+flex-direction: column;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+align-items: center;  
+}
+
+.nav-item:hover{
+    background-color: #5F5D5D;
+    border-radius: 3rem;
+}
+.footer{
+    
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-area: footer;
+    opacity: 0.7;
+    background-color: #0a0a0a;
+
+
+    &__titulo{
+        color: whitesmoke;
+    }
+    &__lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    
+    
+
+    
+    &__elementosRedes{
+        display: inline-block;
+        margin-right:50px;
+    }
+
+    &__logoLinkedin{
+        @include borde();
+        &:hover{
+            background-color: #007bb5;
+            transform: scale(1.2, 1.2);
+        }
+    }
+
+    &__logoFacebook{
+        @include borde();
+        &:hover{
+            
+            transform: scale(1.2, 1.2);
+        }
+    }
+
+    &__logoInstagram{
+        @include borde();
+        &:hover{
+            background-color: #125688;
+            transform: scale(1.2, 1.2);
+            
+        }
+    }
+    
+
+    
+    &__copyright{
+        display: flex;
+        align-self: flex-end;
+        color: whitesmoke;
+    }
+}
+/*LOGO WHATSAPP*/
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    -webkit-box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
