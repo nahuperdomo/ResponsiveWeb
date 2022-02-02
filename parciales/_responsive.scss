@@ -1,0 +1,121 @@
+/*MEDIDA TABLET*/
+@media (min-width: 768px){
+   .main{
+       p{
+           font-size: 2rem;
+       }
+       &__titulo{
+        font-size: 3rem;
+       }
+       
+       &__contedorTitulo{
+           display: flex;
+           justify-content: center;
+       }
+       &__presentacion{
+           flex-direction: column;
+           align-items: center;
+       }
+       &__todosProductos{
+           display: flex;
+           align-items: center;
+           span{
+               margin-bottom: 3rem;
+           }
+       }
+
+       &__seccionProductos{
+           img{
+               margin-right: 2rem;
+           }
+       }
+
+       &__botonesAyuda{
+           button{
+               margin-right: 0.5rem;
+           }
+       }
+
+       &__todosProductos{
+           display: flex;
+           flex-direction: column;
+       }
+
+       &__imagenes{
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+       }
+
+       &__descripcionBio{
+           display: flex;
+           align-items: center;
+        img{
+            order: 1;
+        }
+       }
+   }
+   .navbar-nav{
+       a{
+           font-size: 1.5rem;
+       }
+   }
+}
+
+/*MEDIDA PORTATIL*/
+@media (min-width: 1024px){
+   
+   #navbarNavDropdown{
+        display: flex;
+        justify-content: end;
+
+    a{
+        font-size: 1rem;
+    }
+
+}
+.main{
+    &__presentacion{
+        p{
+            text-align: center;
+        }
+    }
+
+    &__imagenes{
+        display: flex;
+        
+    }
+}
+}
+
+/*PORTATIL L*/
+@media (min-width: 1440px){
+    .main{
+        &__seccionInfo3{
+            align-content: flex-end;
+        }
+
+        .col-xl-12{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__divDerecha{
+            width: 50%;
+        }
+
+        &__seccionInfo2{
+            justify-content: center;
+        }
+
+        &__contedorTitulo{
+         h1{
+            font-size: 4rem;
+         }   
+        }
+        &__sobre_nosotros{
+            h1{
+                font-size: 4rem;
+            }
+        }
+    }
+}

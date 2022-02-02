@@ -1,0 +1,64 @@
+.footer{
+    
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-area: footer;
+    opacity: 0.7;
+    background-color: #0a0a0a;
+    align-items: center;
+
+
+    &__titulo{
+        color: whitesmoke;
+    }
+    &__lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    
+    
+
+    
+    &__elementosRedes{
+        display: inline-block;
+        margin-right:50px;
+    }
+
+    &__logoLinkedin{
+        @include borde();
+        &:hover{
+            background-color: #007bb5;
+            transform: scale(1.2, 1.2);
+        }
+    }
+
+    &__logoFacebook{
+        @include borde();
+        &:hover{
+            
+            transform: scale(1.2, 1.2);
+        }
+    }
+
+    &__logoInstagram{
+        @include borde();
+        &:hover{
+            background-color: #125688;
+            transform: scale(1.2, 1.2);
+            
+        }
+    }
+    
+
+    
+    &__copyright{
+        display: flex;
+        align-self: flex-end;
+        color: whitesmoke;
+    }
+}

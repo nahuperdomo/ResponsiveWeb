@@ -1,0 +1,16 @@
+@mixin borde {
+    border-radius: 2rem;
+}
+.navbar-nav{
+  display: flex;
+flex-direction: column;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+align-items: center;  
+}
+
+.nav-item:hover{
+    background-color: #5F5D5D;
+    border-radius: 3rem;
+}
