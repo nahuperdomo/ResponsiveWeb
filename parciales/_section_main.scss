@@ -10,6 +10,11 @@
             overflow: hidden;
             color: #0a0a0a;
     }
+
+    &__contedorTitulo{
+        display: flex;
+        justify-content: center;
+    }
     &__tituloProductos{
         font-family: 'Bitter', serif;
         font-size: x-large;
@@ -63,10 +68,6 @@
         justify-content: center;
         align-items: center;
 
-    }
-    #camaras:hover{
-        width: 40rem;
-        transform: rotate(40);
     }
     
     &__campo--modified{

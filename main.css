@@ -56,6 +56,15 @@ body {
   color: #0a0a0a;
 }
 
+.main__contedorTitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .main__tituloProductos {
   font-family: 'Bitter', serif;
   font-size: x-large;
@@ -135,12 +144,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.main #camaras:hover {
-  width: 40rem;
-  -webkit-transform: rotate(40);
-          transform: rotate(40);
 }
 
 .main__campo--modified {
