@@ -53,7 +53,7 @@ body {
   -webkit-animation: typing 2s steps(14), blink 0.5s infinite step-end alternate;
           animation: typing 2s steps(14), blink 0.5s infinite step-end alternate;
   overflow: hidden;
-  color: whitesmoke;
+  color: #0a0a0a;
 }
 
 .main__tituloProductos {
@@ -419,6 +419,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
 }
 
 @-webkit-keyframes typing {
@@ -709,6 +713,16 @@ body {
   }
   .main__sobre_nosotros h1 {
     font-size: 4rem;
+  }
+  .carousel-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .carousel-item img {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */
