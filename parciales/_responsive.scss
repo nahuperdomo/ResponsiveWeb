@@ -11,6 +11,7 @@
        }
        &__titulo{
         font-size: 3rem;
+        color: whitesmoke;
        }
        
        &__contedorTitulo{
@@ -80,6 +81,9 @@
 
 }
 .main{
+    &__titulo{
+                color: whitesmoke;
+       }
     &__presentacion{
         p{
             text-align: center;
@@ -99,7 +103,11 @@
 
 /*PORTATIL L*/
 @media (min-width: 1440px){
+    
     .main{
+        &__titulo{
+            color: whitesmoke;
+   }
         &__seccionInfo3{
             align-content: flex-end;
         }
@@ -135,7 +143,6 @@
 
     .carousel-inner{
         display: flex;
-        justify-content: space-around;
     }
     
 }

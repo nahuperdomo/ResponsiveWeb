@@ -103,14 +103,14 @@ body {
 }
 
 .main__tituloFormulario {
-  font-size: 2rem;
+  font-size: 1rem;
   display: block;
   font-family: monospace;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 9ch;
-  -webkit-animation: typing 2s steps(9), blink 0.5s infinite step-end alternate;
-          animation: typing 2s steps(9), blink 0.5s infinite step-end alternate;
+  width: 8ch;
+  -webkit-animation: typing 2s steps(8), blink 0.5s infinite step-end alternate;
+          animation: typing 2s steps(8), blink 0.5s infinite step-end alternate;
   overflow: hidden;
   color: whitesmoke;
 }
@@ -181,13 +181,13 @@ body {
 
 .main__presentacion--modified h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.8rem;
   display: block;
   font-family: monospace;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 10ch;
-  -webkit-animation: typing 2s steps(10), blink 0.5s infinite step-end alternate;
+  width: 9ch;
+  -webkit-animation: typing 2s steps(9), blink 0.5s infinite step-end alternate;
   animation: typing 2s steps(10), blink 0.5s infinite step-end alternate;
   overflow: hidden;
   color: whitesmoke;
@@ -601,6 +601,7 @@ body {
   }
   .main__titulo {
     font-size: 3rem;
+    color: whitesmoke;
   }
   .main__contedorTitulo {
     display: -webkit-box;
@@ -688,6 +689,9 @@ body {
   #navbarNavDropdown a {
     font-size: 1rem;
   }
+  .main__titulo {
+    color: whitesmoke;
+  }
   .main__presentacion p {
     text-align: center;
   }
@@ -704,6 +708,9 @@ body {
 
 /*PORTATIL L*/
 @media (min-width: 1440px) {
+  .main__titulo {
+    color: whitesmoke;
+  }
   .main__seccionInfo3 {
     -ms-flex-line-pack: end;
         align-content: flex-end;
@@ -738,8 +745,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -39,15 +39,15 @@
             flex-direction: column;
         }
     }
-
+    
     &__tituloFormulario{
-        font-size: 2rem;
+        font-size: 1rem;
         display: block;
         font-family: monospace;
         white-space: nowrap;
         border-right:4px solid;
-        width:9ch;
-        animation: typing 2s steps(9), blink .5s infinite step-end alternate;
+        width:8ch;
+        animation: typing 2s steps(8), blink .5s infinite step-end alternate;
         overflow: hidden;
         color: whitesmoke; 
     }
@@ -98,13 +98,13 @@
             
             h1{
                 text-align: center;
-                font-size: 4rem;
+                font-size: 3.8rem;
                 display: block;
                 font-family: monospace;
                 white-space: nowrap;
                 border-right: 4px solid;
-                width: 10ch;
-                -webkit-animation: typing 2s steps(10), blink 0.5s infinite step-end alternate;
+                width: 9ch;
+                -webkit-animation: typing 2s steps(9), blink 0.5s infinite step-end alternate;
                 animation: typing 2s steps(10), blink 0.5s infinite step-end alternate;
                 overflow: hidden;
                 color: whitesmoke;
