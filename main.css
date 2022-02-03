@@ -137,6 +137,12 @@ body {
           align-items: center;
 }
 
+.main #camaras:hover {
+  width: 40rem;
+  -webkit-transform: rotate(40);
+          transform: rotate(40);
+}
+
 .main__campo--modified {
   color: whitesmoke;
   font-size: 1rem;

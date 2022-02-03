@@ -64,7 +64,10 @@
         align-items: center;
 
     }
-
+    #camaras:hover{
+        width: 40rem;
+        transform: rotate(40);
+    }
     
     &__campo--modified{
         color: whitesmoke;
