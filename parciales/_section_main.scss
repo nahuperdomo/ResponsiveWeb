@@ -34,6 +34,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .row{
+            flex-direction: column;
+        }
     }
 
     &__tituloFormulario{
@@ -50,7 +54,6 @@
     &__divForm{
         background-color: #0a0a0a;
         opacity: 0.7;
-        width: 27rem;
         height: 30rem;
         border-radius: 3rem;
         margin-bottom: 2rem;
@@ -61,10 +64,12 @@
         align-items: center;
 
     }
+
     
     &__campo--modified{
         color: whitesmoke;
-        font-size: 1.3rem;
+        font-size: 1rem;
+        padding: 1rem;
     }
 
 
@@ -268,6 +273,7 @@
     &__formulario{
         input{
             margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
         select{
             margin-bottom: 1rem;

@@ -1,6 +1,11 @@
 /*MEDIDA TABLET*/
 @media (min-width: 768px){
    .main{
+
+        &__divForm{
+            width: 27rem;
+            height: 30rem;
+        }
        p{
            font-size: 2rem;
        }
@@ -85,6 +90,10 @@
         display: flex;
         
     }
+    &__divForm{
+        width: 27rem;
+        height: 30rem;
+    }
 }
 }
 
@@ -117,15 +126,16 @@
                 font-size: 4rem;
             }
         }
+
+        &__divForm{
+            width: 27rem;
+            height: 30rem;
+        }
     }
 
     .carousel-inner{
         display: flex;
         justify-content: space-around;
     }
-    .carousel-item{
-        img{
-            width: 50%;
-        }
-    }
+    
 }
