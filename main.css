@@ -603,6 +603,9 @@ body {
 
 /*MEDIDA TABLET*/
 @media (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .main__divForm {
     width: 27rem;
     height: 30rem;
@@ -689,6 +692,9 @@ body {
 
 /*MEDIDA PORTATIL*/
 @media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   #navbarNavDropdown {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -719,6 +725,9 @@ body {
 
 /*PORTATIL L*/
 @media (min-width: 1440px) {
+  body {
+    overflow-x: hidden;
+  }
   .main__titulo {
     color: whitesmoke;
   }

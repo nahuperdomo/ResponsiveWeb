@@ -1,5 +1,9 @@
 /*MEDIDA TABLET*/
 @media (min-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
    .main{
 
         &__divForm{
@@ -71,6 +75,9 @@
 /*MEDIDA PORTATIL*/
 @media (min-width: 1024px){
    
+    body{
+        overflow-x: hidden;
+    }
    #navbarNavDropdown{
         display: flex;
         justify-content: end;
@@ -104,6 +111,9 @@
 /*PORTATIL L*/
 @media (min-width: 1440px){
     
+    body{
+        overflow-x: hidden;
+    }
     .main{
         &__titulo{
             color: whitesmoke;
