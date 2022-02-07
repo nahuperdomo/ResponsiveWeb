@@ -1,3 +1,4 @@
+@import "./variables";
 .footer{
     
 
@@ -6,12 +7,12 @@
     flex-wrap: nowrap;
     grid-area: footer;
     opacity: 0.7;
-    background-color: #0a0a0a;
+    background-color: $color-bg;
     align-items: center;
 
 
     &__titulo{
-        color: whitesmoke;
+        color: $color-textoGrande;
     }
     &__lista{
         display: flex;
@@ -32,7 +33,7 @@
     &__logoLinkedin{
         @include borde();
         &:hover{
-            background-color: #007bb5;
+            background-color: $color-linkedin;
             transform: scale(1.2, 1.2);
         }
     }
@@ -48,7 +49,7 @@
     &__logoInstagram{
         @include borde();
         &:hover{
-            background-color: #125688;
+            background-color: $color-instagram;
             transform: scale(1.2, 1.2);
             
         }
@@ -59,6 +60,6 @@
     &__copyright{
         display: flex;
         align-self: flex-end;
-        color: whitesmoke;
+        color: $color-textoGrande;
     }
 }

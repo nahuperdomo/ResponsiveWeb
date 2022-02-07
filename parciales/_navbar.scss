@@ -1,3 +1,4 @@
+@import "./variables";
 @mixin borde {
     border-radius: 2rem;
 }
@@ -11,6 +12,6 @@ align-items: center;
 }
 
 .nav-item:hover{
-    background-color: #5F5D5D;
+    background-color: $color-hoverNav;
     border-radius: 3rem;
 }

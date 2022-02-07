@@ -1,4 +1,5 @@
 /*MEDIDA TABLET*/
+@import "./variables";
 @media (min-width: 768px){
 
     body{
@@ -15,7 +16,7 @@
        }
        &__titulo{
         font-size: 3rem;
-        color: whitesmoke;
+        color: $color-textoGrande;
        }
        
        &__contedorTitulo{
@@ -89,7 +90,7 @@
 }
 .main{
     &__titulo{
-                color: whitesmoke;
+                color: $color-textoGrande;
        }
     &__presentacion{
         p{
@@ -116,7 +117,7 @@
     }
     .main{
         &__titulo{
-            color: whitesmoke;
+            color: $color-textoGrande;
    }
         &__seccionInfo3{
             align-content: flex-end;
